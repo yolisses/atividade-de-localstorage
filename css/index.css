@@ -1,0 +1,55 @@
+form {
+max-width: 400px;
+display: grid;
+grid-template-columns: auto auto;
+}
+
+form>div {
+padding: 20px;
+}
+
+form>div>input {
+float: right;
+margin: 0 0 0 10px;
+}
+
+body {
+display: grid;
+justify-content: center;
+}
+
+.container {
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 10px 10px #000;
+
+}
+
+table {
+border-collapse: collapse;
+margin: 10px;
+}
+
+th,
+td {
+padding: 5px 10px;
+text-align: left;
+border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+tbody>tr:hover {
+background-color: #cecece;
+}
+
+thead {
+color: white;
+background-color: rgb(121, 121, 121);
+}
+
+fieldset {
+margin: 0 0 40px 0;
+}
+
+label+input{
+    margin: 0 0 5px 0;
+}

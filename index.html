@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com LocalStorage</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <fieldset>
+      <form id="frmCadastro">
+        <label for="txtCodigo">Código</label>
+        <input type="text" id="txtCodigo" />
+        <label for="txtNome">Nome</label>
+        <input type="text" id="txtNome" />
+        <label for="txtTelefone">Telefone</label>
+        <input type="text" id="txtTelefone" />
+        <label for="txtEmail">Email</label>
+        <input type="text" id="txtEmail" />
+        <span></span>
+        <div id="divSalvar">
+          <input type="button" value="Adicionar" id="btnSalvar"
+            onclick="adicionarCadastro(); atualizarTabela(); resetTexts()" />
+        </div>
+        <div id="divAlterar">
+          <input type="button" value="Alterar" id="btnAlterar"
+            onclick="alterarCadastro(); atualizarTabela(); mudarParaAdicao();resetTexts()" />
+          <input type="button" value="Cancelar" id="btnCancelar" onclick="mudarParaAdicao(); resetTexts()" />
+        </div>
+      </form>
+    </fieldset>
+    <table id="tblListar">
+      <thead>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="./js/main.js"></script>
+  <script>atualizarTabela()</script>
+  <script>mudarParaAdicao()</script>
+</body>
+
+</html>
