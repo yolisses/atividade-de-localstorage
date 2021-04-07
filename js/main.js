@@ -43,6 +43,9 @@ function alterarCadastro() {
 }
 
 function removerCadastro(index) {
+    if (lastIndex > index) {
+        lastIndex--
+    }
     Cadastros.remove(index)
 }
 
