@@ -19,6 +19,7 @@ function resetTexts() {
     inputs.
         filter(e => e.getAttribute('type') == 'text').
         map(e => e.value = '')
+    document.getElementById('txtCodigo').focus()
 }
 
 function mudarParaAlteracao() {
