@@ -39,21 +39,21 @@ function adicionarCadastro() {
 
 function alterarCadastro() {
     const objeto = getMenuValues()
-    const index = parseInt(document.getElementById('btnAlterar').getAttribute("index"))
-    Cadastros.update(index, objeto)
+    Cadastros.update(lastIndex, objeto)
 }
 
 function removerCadastro(index) {
     Cadastros.remove(index)
 }
 
+let lastIndex
+
 function setBtnAlterarIndex(index) {
-    document.getElementById('btnAlterar').setAttribute("index", index)
+    lastIndex = index
 }
 
 function atualizarTabela() {
     const cadastros = Cadastros.get()
-    console.log(cadastros)
     if (cadastros) {
         document.querySelector('tbody').innerHTML =
             cadastros.reduce((str, cadastro, index) => str +
